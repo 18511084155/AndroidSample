@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item app:state1="true" android:color="@color/dark_light_gray"/>
+    <item app:state2="true" android:color="@color/loan_home_notice_diamond"/>
+</selector>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AndroidSample</string>
+    <string name="notice_title">邀请好友提现，立刻领取200元红包～</string>
+
+    <string name="loan_card_title">信用钱包 | %1$s</string>
+    <string name="loan_most">%1$s元 </string>
+    <string name="overdue">已逾期</string>
+
+    <string name="input_phone_number">请输入手机号</string>
+
+    <string name="apply_for_now">立即申请</string>
+</resources>

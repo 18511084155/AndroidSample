@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lightWhite">#EFEFEF</color>
+    <color name="gray_3">#D9D9D9</color>
+    <color name="text_color">#FF333333</color>
+    <color name="gray_text_color">#666666</color>
+    <color name="light_text_color">#999999</color>
+    <color name="hint_text_color">#b5b5b5</color>
+    <color name="light_gray">#D9D9D9</color>
+
+    <!--分割线-->
+    <color name="dividerColor">#ffdcdcdc</color>
+    <!--边框线-->
+    <color name="strokeColor">#333333</color>
+
+    <color name="alpha_gray">#CC646464</color>
+    <color name="dark_light_gray">#464B53</color>
+
+
+    <color name="loan_home_text_gray">#B9B9B9</color>
+    <color name="loan_home_text_diamond">#4C515D</color>
+    <color name="loan_home_red">#AB2B2B</color>
+    <color name="loan_home_notice_diamond">#BABEC8</color>
+
+    <color name="normal_use_golden_color">#FFA08A59</color>
+
+    <color name="red">#fd5e5e</color>
+    <color name="blue">#5e78fe</color>
+    <color name="yellow">#fdc242</color>
+</resources>

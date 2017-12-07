@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_animation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <com.cz.library.widget.card.CardLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        auto:cl_cardBackgroundColor="@color/white"
+        auto:cl_cardElevation="2dp"
+        auto:cl_cardCornerRadius="2dp">
+
+        <ImageView
+            android:id="@+id/noticeIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/message_notify_img"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/noticeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dip"
+            android:paddingLeft="11dip"
+            android:paddingRight="11dip"
+            android:paddingTop="16dip"
+            android:text="@string/notice_title"
+            android:textSize="13dip" />
+    </com.cz.library.widget.card.CardLinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_cardContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="27dp">
+
+        <com.cz.library.widget.BothTextView
+            android:id="@+id/btvLevelTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="15dp"
+            android:paddingTop="20dp"
+            android:text="普卡"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"
+            auto:bv_subText="查看详情"
+            auto:bv_subTextColor="@color/normal_use_golden_color"
+            auto:bv_subTextSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/rlCardContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btvLevelTop"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/background_level3">
+
+            <ImageView
+                android:id="@+id/ivCardLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:layout_below="@+id/tvCardLevel"
+                android:src="@drawable/level_logo_3" />
+
+
+            <com.cz.library.widget.state.StateTextView
+                android:id="@+id/stvLoanMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@id/ivCardLogo"
+                android:layout_below="@+id/tvCardLevel"
+                android:textColor="@drawable/loan_home_text_level"
+                android:textSize="12sp"
+                android:text="最高可借款额度"/>
+
+            <com.cz.library.widget.state.StateTextView
+                android:id="@+id/stvLoanTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/stvLoanMoney"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@id/ivCardLogo"
+                android:textColor="@drawable/loan_home_text_level"
+                android:textSize="36sp"
+                android:text="10000元"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/stvLoanTime"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@id/ivCardLogo"
+                android:orientation="vertical">
+
+                <com.cz.library.widget.state.StateTextView
+                    android:id="@+id/stvNeedRepayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@drawable/loan_home_notice_text"
+                    android:textSize="14sp"
+                    android:text="10000元"/>
+
+                <com.cz.library.widget.state.StateTextView
+                    android:id="@+id/stvNeedRepaymentTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/loan_home_red"
+                    android:textSize="14sp"
+                    android:text="10000元"/>
+            </LinearLayout>
+
+            <com.cz.library.widget.state.StateTextView
+                android:id="@+id/tvCardLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="19dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:text="@string/loan_card_title"
+                android:textColor="@drawable/loan_home_text_level"
+                android:textSize="14sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/rlCardContent"
+            android:layout_marginTop="16dp"
+            android:layout_alignWithParentIfMissing="true"
+            android:src="@drawable/jiekuangonglve"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/loan_foreground_bg"
+        android:layout_marginTop="-70dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_layout"
+            android:layout_width="match_parent"
+            android:layout_height="?menuSize"
+            android:layout_marginTop="77dip"
+            android:background="@drawable/input_gray_round_shape"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/phone_icon" />
+
+            <com.woodys.demos.widget.EditTextWithDelete
+                android:id="@+id/accierit_input_et1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/input_phone_number"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/gray"
+                android:textSize="14sp"
+                auto:deleteIcon="@drawable/close_icon"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/applyNowView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="30dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/black2gray_btn_selector"
+            android:gravity="center"
+            android:paddingBottom="8dip"
+            android:paddingTop="8dip"
+            android:text="@string/apply_for_now"
+            android:textColor="@color/while2gray_selector_text"
+            android:textSize="17dip" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip">
+
+            <cz.widget.viewpager.NewViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+
+            <cz.widget.viewpager.indicator.IndicatorView
+                android:id="@+id/indicatorView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                auto:iv_indicatorColor="@color/blue"
+                auto:iv_indicatorGravity="center"
+                auto:iv_indicatorHeight="8dp"
+                auto:iv_indicatorPadding="4dp"
+                auto:iv_indicatorSelectColor="@color/colorPrimary"
+                auto:iv_indicatorSizeOffset="2dp"
+                auto:iv_indicatorWidth="8dp" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>
