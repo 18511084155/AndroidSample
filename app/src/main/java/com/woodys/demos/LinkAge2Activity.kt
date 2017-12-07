@@ -17,5 +17,6 @@ class LinkAge2Activity : AppCompatActivity() {
             (it as TextView).text=title
         }
 
+
     }
 }
