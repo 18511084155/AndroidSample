@@ -10,3 +10,4 @@ class CircleAnimActivity : AppCompatActivity() {
         setContentView(R.layout.activity_circle_anim)
     }
 }
+
